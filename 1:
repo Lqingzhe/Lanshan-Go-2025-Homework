@@ -1,0 +1,14 @@
+package main
+
+func main() {
+	a:=[...]int{1,2,1,3,4}
+  b=hanshu(a)
+  print(b)
+}
+func hanshu(a []int) map[int]int {
+	m := make(map[int]int)
+	for i := range a {
+		m[a[i]]++
+	}
+	return m
+}
